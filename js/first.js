@@ -4,3 +4,12 @@
 - A függvény szorozza meg a tömbelemek értékét 1.27-tel, majd pedig 
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
+let Numericarray = [];
+let akkumulator = 0;
+
+const brutto = (Numericarray) => {
+  Numericarray.forEach((element) => {
+    akkumulator = akkumulator + Math.round(element * 1.27);
+  });
+  return akkumulator;
+};

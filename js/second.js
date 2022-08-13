@@ -15,3 +15,19 @@ hogy a tömb minden eleme number típusú-e vagy sem
 - `someElementsAreNumbers`: Értéke true/false attól függően, 
 hogy a tömbben van-e number típusú elem vagy sem
 */
+
+const numericarray = [];
+let primitive;
+
+const checker = (numericarray, primitive) => {
+  return {
+    exists: numericarray.some((element) => (element = primitive)),
+    index: numericarray.findIndex((element) => (element = primitive)),
+    allElementsAreNumbers: numericarray.every(
+      (element) => (element.typeof = "number")
+    ),
+    someElementsAreNumbers: numericarray.some(
+      (element) => (element.typeof = "number")
+    ),
+  };
+};
