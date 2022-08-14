@@ -7,9 +7,9 @@
 
 const arr = [];
 const generateList = (arr) => {
-  console.log("<ul>");
-  arr.forEach((item) => {
-    console.log("<li> " + item + " </li>");
-  });
-  console.log("</ul>");
+  var str = "";
+  for (let item = 0; item < arr.length; item++) {
+    str = str + " <li> " + arr[item] + " </li>";
+  }
+  return " <ul> " + str + " </ul>";
 };
